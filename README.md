@@ -13,9 +13,17 @@ a Sudoku puzzle is valid or not.
 
 ## Implementation
 
-### Part I - Naive Implementation
+### Naive Implementation
 
-### Part II - Multithreaded Implementation
+### Multithreaded Implementation
+
+
+## Usage
+
+To compile and execute ```sudoku_validator_naive.c```, run the following commands :-
+
+``` gcc -o sudoku_validator_naive .\sudoku_validator_naive.c ```
+```  .\sudoku_validator_naive ```
 
 
 

@@ -1,7 +1,18 @@
 #include <stdio.h>
+#include <time.h>
+
+/*Returns the current time in seconds*/
+double get_time()
+{
+    struct timespec now;
+    clock_gettime(CLOCK_REALTIME, &now);
+    return now.tv_sec + now.tv_nsec*1e-9;
+}
 
 int main()
 {
+    double time = get_time();
+
     int sudoku[9][9] = {
         {7, 9, 2, 1, 5, 4, 3, 8, 6},
         {6, 4, 3, 8, 2, 7, 1, 5, 9},
@@ -103,6 +114,8 @@ int main()
     {
         printf("The given solution is valid.\n");
     }
+
+    printf("time taken: %.6lf seconds\n", get_time() - time);
 
     return 0;
 }
