@@ -1,7 +1,3 @@
-/********************************************************************
-    @brief        Implementing sudoku validator without using threads
-*********************************************************************/
-
 #include <stdio.h>
 #include <time.h>
 #include <unistd.h>
